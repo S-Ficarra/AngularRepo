@@ -1,0 +1,56 @@
+h1 {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    color: rgb(28,28,28);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: rgb(28,28,28);
+}
+
+form input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: rgb(28,28,28);
+    margin: .5em;
+    border-radius: 10px;
+    padding: .3em;
+    border: none;
+    width: 50%;
+}
+
+form textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: rgb(28,28,28);
+    margin: .5em;
+    border-radius: 10px;
+    padding: .3em;
+    border: none;
+    width: 50%;
+}
+
+form button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 1em;
+    padding: .5em 1em .5em 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(28,28,28);
+    color: #d19dfc
+}

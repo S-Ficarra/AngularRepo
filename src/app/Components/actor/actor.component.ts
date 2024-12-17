@@ -3,7 +3,6 @@ import { ActorDetails } from '../../core/models/actors.models';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { ActorsServices } from '../../core/services/actors.service';
-import { MoviesService } from '../../core/services/movie.service';
 import { CommonModule } from '@angular/common';
 import { FilmographyMovie } from '../../core/models/movies.models';
 

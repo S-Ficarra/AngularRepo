@@ -9,11 +9,13 @@ import { AccountComponent } from './Components/account/account.component';
 import { LoginComponent } from './Components/login/login.component';
 import { NgModule } from '@angular/core';
 import { authGuard } from './core/auth.guard';
+import { ContactComponent } from './Components/contact/contact.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'account', component: AccountComponent, canActivate: [authGuard] },
+  { path: 'contact', component: ContactComponent, canActivate: [authGuard] },
   { path: 'home', component: HomeComponent, canActivate: [authGuard] },
   { path: 'movie/:id', component: SingleMovieComponent, canActivate: [authGuard] },
   { path: 'actor/:id', component: ActorComponent, canActivate: [authGuard] },

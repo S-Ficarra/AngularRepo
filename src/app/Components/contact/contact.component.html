@@ -1,0 +1,27 @@
+
+
+
+
+    <ng-template #form >
+        <h1>Contactez-vous!</h1>
+        <form (submit)="onSubmit($event)">
+            <label for="receiver">Destinaire :</label>
+            <input type="email" id="receiver" [(ngModel)]="receiver" name="receiver" placeholder="Entrez le destinataire"
+                required />
+    
+            <label for="subject">Objet :</label>
+            <input type="text" id="subject" [(ngModel)]="subject" name="subject" placeholder="Entrez le sujet" required />
+    
+            <label for="message">Message :</label>
+            <textarea type="text" id="message" [(ngModel)]="message" name="message" placeholder="Entrez le message"
+                required>
+          </textarea>
+    
+            <button type="submit">Envoyer</button>
+        </form>
+    </ng-template>
+
+
+<div *ngIf="emailSent; else form">
+    <h1>Votre email a bien été envoyé !</h1>
+</div>
