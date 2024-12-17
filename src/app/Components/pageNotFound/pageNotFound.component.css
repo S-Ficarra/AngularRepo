@@ -1,0 +1,9 @@
+.textContainer h1 {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    color: rgb(28,28,28);
+}

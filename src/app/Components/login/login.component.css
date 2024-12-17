@@ -1,0 +1,46 @@
+h2 {
+    font-size: 3em;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5em auto;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loginContainer form{
+    justify-items: center;
+    align-items: center;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formInput label{
+    font-size: 1.5em;
+}
+
+.formInput input{
+    margin: 1em;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.loginContainer button {
+    margin: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(209, 157, 252);
+}

@@ -1,0 +1,30 @@
+<nav class="NavBar">
+    <a [routerLink]="'/home'" >
+        <div class="LogoContainer">
+            <img src="../../../assets/pngwing.com.png" alt="">
+            <h1>The Movie App</h1>
+        </div>
+    </a>
+    <div class="NavBarButtonContainer">
+        <button>
+            <a [routerLink]="'/top-rated-movies'" >
+                Les meilleurs films
+            </a>
+        </button>
+        <button>
+            <a [routerLink]="'/popular-movies'" >
+                Les films populaires
+            </a>
+        </button>
+        <button>
+            <a [routerLink]="'/account'" >
+                Mon Compte
+            </a>
+        </button>
+        <button>
+            <a [routerLink]="'/contact'" >
+                Contact
+            </a>
+        </button>
+    </div>
+</nav>

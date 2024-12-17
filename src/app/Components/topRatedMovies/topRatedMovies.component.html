@@ -1,0 +1,11 @@
+<h1>
+    Les films les mieux notés:
+</h1>
+<div class="movieList">
+    <div *ngFor="let movie of topRatedMovies" class="movieContainer">
+        <a [routerLink]="'/movie/' + movie.id">
+            <img [src]="'https://image.tmdb.org/t/p/w185/' + movie.poster_path" alt="Poster de {{ movie.title }}">
+            <h2 class="movieTitle">{{ movie.title }}</h2>
+        </a>
+    </div>
+</div>

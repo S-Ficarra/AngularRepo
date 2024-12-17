@@ -1,0 +1,113 @@
+.castList {
+    display: flex;
+    overflow: auto;
+}
+
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.movieAndTitleContainer {
+    padding: 5em 5em 5em 8em;
+    width: 342px;
+}
+
+.posterImg {
+    box-shadow: 0px 0px 15px black;
+}
+
+.movieTitle {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    text-align: center;
+    color: #d19dfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.detailsContainer {
+    margin: 2em auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 0px 15px black;
+}
+
+.detailsContainer h3, h5 {
+    color: #d19dfc;
+}
+
+.detailsContainer p {
+    color: white;
+}
+
+.movieSynopsis {
+    width: 50%;
+    margin: 5em auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.directorTile {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d19dfc;
+    width: 185px;
+    display: flex;
+}
+
+.directorTile img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.directorTile a{
+    text-decoration: none;
+    color: inherit;   
+}
+
+.directorTile p {
+    color: white;
+}
+
+.castMember {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 1em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d19dfc;
+}
+
+.castMember p {
+    color: white;
+}
+
+.castMember img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.castMember a{
+    text-decoration: none;
+    color: inherit;   
+}
+
+
+

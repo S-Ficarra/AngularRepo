@@ -1,0 +1,57 @@
+<section *ngIf="movieDetails">
+    <div 
+        class="heroContainer" 
+        [ngStyle]="{'background-image': 'url(' + 'https://image.tmdb.org/t/p/w1280/' + movieDetails.backdrop_path + ')'}">
+            <div class="movieAndTitleContainer">
+                <img [src]="'https://image.tmdb.org/t/p/w342/' + movieDetails.poster_path" [alt]="movieDetails.title + ' poster'" class="posterImg">
+                <h1 class="movieTitle">{{movieDetails.title}}</h1>
+            </div>
+    </div>
+    <div class="detailsContainer">
+        <div>
+            <h3>Titre original :</h3>
+            <p>{{movieDetails.original_title}}</p>
+        </div>
+        <div>
+            <h3>Pays d'origine :</h3>
+            <p>{{movieDetails.origin_country}}</p>
+        </div>
+        <div>
+            <h3>Date de sortie :</h3>
+            <p>{{movieDetails.release_date.split("-").reverse().join("/")}}</p>
+        </div>
+        <div class="genreContainer">
+            <h3>Genre(s) :</h3>
+            <p *ngFor="let genre of movieDetails.genres">{{genre.name}}</p>
+        </div>
+        <div class="movieStats">
+            <h3>Recettes :</h3>
+            <p>{{movieDetails.revenue.toLocaleString('fr-FR')}} $</p>
+        </div>
+        <div class="productionContainer">
+            <h3>Société(s) de production :</h3>
+            <p *ngFor="let company of movieDetails.production_companies">{{company.name}}</p>
+        </div>
+    </div>
+    <h4 class="movieSynopsis">{{movieDetails.overview}} </h4>
+    <div>
+        <div class="directorTile">
+            <a [routerLink]="'/actor/' + movieCast[0].id">
+                <img [src]="'https://image.tmdb.org/t/p/w185/' + movieCast[0].profile_path" [alt]="'Photo de ' + movieCast[0].name">
+                <p>Réalisateur</p>
+                <h3>{{movieCast[0].name}} </h3>
+            </a>
+        </div>
+        <div class="castList">
+            <div *ngFor="let cast of movieCast.slice(1)" class="castMember">
+                <a [routerLink]="'/actor/' + cast.id">
+                    <img [src]="'https://image.tmdb.org/t/p/w185/' + cast.profile_path" [alt]="'Photo de ' + cast.name">
+                    <p>{{cast.name}}</p>
+                    <h3>{{cast.character}}</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+

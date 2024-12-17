@@ -1,0 +1,68 @@
+.actorTile {
+    display: flex;
+    width: 75%;
+    margin: 2em auto;
+}
+
+.actorPicture {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.actorDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: rgb(28, 28, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.actorName {
+
+}
+
+.actorBiography {
+    width: 80%;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 2em;
+    color: rgb(28, 28, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.filmoList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.filmoList a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.movieContainer {
+    display: flex;
+    text-align: center;
+    margin: 1em;
+}
+
+.movieContainer img {
+    box-shadow: 0px 0px 15px black;
+}
+
+.movieTitle {
+    max-width: 20ch;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

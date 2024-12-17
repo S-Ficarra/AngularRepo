@@ -1,0 +1,20 @@
+.accountContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10em auto;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.accountContainer button {
+    margin: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(209, 157, 252);
+}

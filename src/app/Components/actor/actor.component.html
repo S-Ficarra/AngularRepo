@@ -1,0 +1,16 @@
+<div class="actorTile">
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + actor?.profile_path" alt="{{actor?.name}}"  class="actorPicture">
+    <div class="actorDetails">
+        <h1 class="actorName">{{ actor?.name }}</h1>
+        <div [innerHTML]="actor?.biography"  class="actorBiography"></div>
+    </div>
+</div>
+<h2>Filmographie</h2>
+<div class="filmoList">
+    <div *ngFor="let movie of filmography" class="movieContainer">
+        <a [routerLink]="'/movie/' + movie.id">
+            <img [src]="'https://image.tmdb.org/t/p/w185/' + movie.poster_path">
+            <h3 class="movieTitle">{{movie.title}}</h3>
+        </a>
+    </div>
+</div>

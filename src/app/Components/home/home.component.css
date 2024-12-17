@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    margin: 1em;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.movieList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.movieList a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.movieContainer {
+    display: flex;
+    text-align: center;
+    margin: 1em;
+}
+
+.movieContainer img {
+    box-shadow: 0px 0px 15px black;
+}
+
+.movieTitle {
+    max-width: 20ch;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

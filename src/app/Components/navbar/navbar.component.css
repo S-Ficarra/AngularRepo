@@ -1,0 +1,49 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em 0 1.5em;
+    background-color: rgb(28, 28, 28);
+}
+
+.NavBar a {
+    text-decoration: none;
+}
+
+.LogoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LogoContainer img{
+    width: 9%;
+}
+
+.LogoContainer h1{
+    font-size: 2em;
+    background: linear-gradient(0.25turn,#8c00ff, #d19dfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.NavBarButtonContainer {
+    align-self: center;
+}
+
+.NavBarButtonContainer button{
+    padding: 1em;
+    margin: 0 .5em 0 .5em;
+    border-radius: 10px;
+    background-color: rgb(28,28,28);
+    border: none;
+}
+
+.NavBarButtonContainer button a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #d19dfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
