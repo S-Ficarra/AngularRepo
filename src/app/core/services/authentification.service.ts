@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { environment } from '../../../../environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   private isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
-  private user = { username: 'user', password: 'password' };
 
   constructor() {
     const storedUser = localStorage.getItem('isAuthenticated');
@@ -16,7 +16,7 @@ export class AuthService {
   }
 
   login(username: string, password: string): boolean {
-    if (username === this.user.username && password === this.user.password) {
+    if (username === environment.user.username && password === environment.user.password) {
       this.isAuthenticatedSubject.next(true);
       localStorage.setItem('isAuthenticated', 'true');
       return true;

@@ -6,6 +6,8 @@ export const environment = {
 
     api_key: 'b6fa51dfae47534ee888df0cf2c81eb3',
     
-    email_api_key : '85ab13900d810d7d48753a3be71d1fec5e7b7c6791a3f39404d7a42b172c21e3'
+    email_api_key : '85ab13900d810d7d48753a3be71d1fec5e7b7c6791a3f39404d7a42b172c21e3',
+
+    user : { username: 'user', password: 'password' }
     
   };
